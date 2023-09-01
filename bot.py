@@ -25,18 +25,18 @@ def collides(pos: np.array, snakes: List[Snake]) -> bool:
     return False
 
 
-class ExampleBot(Bot):
+class OtterByte(Bot):
     """
     Moves randomly, but makes sure it doesn't collide with other snakes
     """
 
     @property
     def name(self):
-        return 'Greedy Gerard'
+        return 'OtterByte'
 
     @property
     def contributor(self):
-        return 'Nobleo'
+        return 'Rokus'
 
     def determine_next_move(self, snake: Snake, other_snakes: List[Snake], candies: List[np.array]) -> Move:
         moves = self._determine_possible_moves(snake, other_snakes[0])
